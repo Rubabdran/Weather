@@ -1,0 +1,69 @@
+section {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section .weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.05); 
+  backdrop-filter: blur(4px);
+  color: white;
+  min-width: 150px;
+}
+
+.weather span {
+  font-weight: bold;
+  color: white;
+}
+
+.weather.sunny {
+  background-color: rgba(255, 191, 102, 0.3);
+}
+
+.weather.clear {
+  background-color: rgba(208, 232, 242, 0.3);
+}
+
+.weather.stormy {
+  background-color: rgba(169, 169, 169, 0.3);
+}
+
+.weather.overcast {
+  background-color: rgba(204, 204, 204, 0.3);
+}
+
+.weather.cloudy {
+  background-color: rgba(176, 196, 222, 0.3);
+}
+
+.weather:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgb(253, 253, 253);
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+ button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
